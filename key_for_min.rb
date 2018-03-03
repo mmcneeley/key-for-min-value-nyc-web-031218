@@ -11,6 +11,7 @@ def key_for_min_value(name_hash)
       low = key
     end
   end
+  low
 end
 
 puts key_for_min_value(veggies)
