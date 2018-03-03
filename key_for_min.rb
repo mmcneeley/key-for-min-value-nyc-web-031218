@@ -13,6 +13,7 @@ def key_for_min_value(name_hash)
       binding.pry
       puts "#{low} at #{key} is lower than #{value}"
       low = key
+      puts low
     else
 
     end
