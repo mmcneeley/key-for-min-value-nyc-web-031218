@@ -16,7 +16,7 @@ def key_for_min_value(name_hash)
       low = key
       puts low
     else
-
+      puts low
     end
   end
   low
