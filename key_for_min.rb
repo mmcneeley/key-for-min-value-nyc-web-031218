@@ -7,19 +7,15 @@ veggies = {"apple" => -45, "banana" => -44.5, "carrot" => -44.9}
 
 def key_for_min_value(name_hash)
   nil if name_hash.length == 0
-  low = nil.to_f
+  low_key = nil
+  low_val = nil
   name_hash.each do |key, value|
-    if value.to_f < low.to_f
-      #binding.pry
-      puts low
-      puts "#{low} at #{key} is lower than #{value}"
-      low = key
-      puts low
-    else
-      puts low
+    if value < low_value
+      low_key = key
+      low_val = value 
     end
   end
-  low
+  low_key
 end
 
 puts key_for_min_value(veggies)
