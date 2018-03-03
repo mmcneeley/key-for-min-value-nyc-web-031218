@@ -11,6 +11,7 @@ def key_for_min_value(name_hash)
   name_hash.each do |key, value|
     if value.to_f < low.to_f
       #binding.pry
+      puts low
       puts "#{low} at #{key} is lower than #{value}"
       low = key
       puts low
