@@ -8,9 +8,10 @@ def key_for_min_value(name_hash)
   low = nil.to_f
   name_hash.each do |key, value|
     if value.to_f < low.to_f
+      puts "#{low} is lower than #{value}"
       low = key
     else
-      low
+
     end
   end
   low
