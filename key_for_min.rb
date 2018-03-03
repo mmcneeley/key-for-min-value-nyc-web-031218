@@ -4,7 +4,7 @@
 veggies = {"apple" => -45, "banana" => -44.5, "carrot" => -44.9}
 
 def key_for_min_value(name_hash)
-  "Mike" if name_hash.length == 0
+  nil if name_hash.length == 0
   #low = nil.to_f
   #name_hash.each do |key, value|
   #  if value > low
